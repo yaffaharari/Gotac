@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bk">
+
+
+
+    <ImageView
+        android:id="@+id/icon_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/imgbk"
+        android:background="@android:color/transparent"
+        android:layout_above="@+id/app_titleTV"
+        android:layout_centerInParent="true" />
+
+    <TextView
+        android:id="@+id/app_titleTV"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/app_title"
+        android:layout_centerInParent="true"
+        android:textColor="@android:color/background_light"
+        android:textSize="45dp"
+        />
+
+    <TextView
+        android:id="@+id/userName_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/firstName"
+        android:textColor="@android:color/white"
+        android:gravity="left"
+        android:layout_marginTop="47dp"
+        android:layout_below="@+id/app_titleTV"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="31dp"
+        android:layout_marginStart="31dp" />
+
+
+    <EditText
+        android:id="@+id/userName_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/userName_tv"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:backgroundTint="@android:color/white"
+        android:textColor="@color/colorAccent"
+        android:imeOptions="actionSend"
+        android:inputType="text"
+        android:maxLines="1" />
+
+
+    <Button
+        android:id="@+id/registerBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Register"
+        android:textColor="@color/colorAccent"
+        android:background="@color/colorPrimaryDark"
+        android:onClick="RegisterClick"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/userName_et"
+        android:layout_alignEnd="@+id/userName_et"
+        android:layout_marginBottom="32dp"
+        android:layout_marginRight="32dp"/>
+</RelativeLayout>

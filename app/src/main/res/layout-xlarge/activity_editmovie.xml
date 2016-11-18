@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    android:id="@+id/scrollView"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentTop="true">
+
+    <include layout="@layout/tool_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+    </include>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/gridlayout"
+        android:columnCount="2"
+        android:layout_centerVertical="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="89dp"
+        android:paddingBottom="@dimen/abc_list_item_padding_horizontal_material"
+        android:paddingTop="@dimen/abc_list_item_padding_horizontal_material"
+        android:paddingLeft="32dp"
+        android:paddingStart="32dp"
+        android:paddingRight="32dp"
+        android:paddingEnd="32dp"
+        android:layout_below="@+id/toolbar"
+        >
+
+            <TextView
+                android:id="@+id/subTextView"
+                android:layout_height="wrap_content"
+                android:text="Subject:"
+                android:gravity="center_vertical"
+                android:layout_gravity="fill"
+                android:layout_rowWeight="1"
+                />
+
+            <EditText
+                android:id="@+id/subjectEditText"
+                android:gravity="center_vertical"
+               android:layout_gravity="fill"
+                android:layout_columnWeight="1"
+                android:layout_width="0dp"
+                android:backgroundTint="@android:color/darker_gray"
+                />
+
+
+            <TextView
+                android:id="@+id/descriptionTextView"
+               android:gravity="center_vertical"
+                android:text="Description:"
+               android:layout_gravity="fill"
+                android:layout_rowWeight="1"
+                />
+
+            <EditText
+                android:id="@+id/descriptionEditText"
+                android:gravity="center_vertical"
+                android:layout_gravity="fill"
+                android:layout_width="0dp"
+                />
+
+            <TextView
+                android:gravity="center_vertical"
+                android:text="image url:"
+                android:layout_gravity="fill"
+                android:layout_rowWeight="1"
+              />
+
+            <EditText
+                android:id="@+id/urlEditText"
+                android:gravity="center_vertical"
+                android:layout_gravity="fill"
+                android:backgroundTint="@android:color/darker_gray"
+                android:layout_width="0dp"
+                />
+
+            <Button
+                android:gravity="center_vertical"
+                android:layout_gravity="fill"
+                android:text="load image"
+                android:onClick="showPictureClick"
+               />
+
+    </GridLayout>
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginRight="32dp"
+    android:layout_below="@id/gridlayout"
+    android:layout_alignParentRight="true"
+    android:layout_alignParentBottom="true"
+    android:orientation="horizontal">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="save"
+        android:id="@+id/addBtn"
+        android:onClick="addOrEditMovieBtnClick"
+      />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cancel"
+        android:id="@+id/cncelBtn"
+        android:layout_toLeftOf="@+id/addBtn"
+        android:onClick="cancelClick"
+        android:layout_alignBottom="@+id/addBtn"
+      />
+</LinearLayout>
+</RelativeLayout>
+</ScrollView>

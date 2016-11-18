@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">TryOfMovieSystem</string>
+    <string name="guest">Guest</string>
+    <!-- <string-array name="boobs">
+        <item name="boo"-->
+    <!-- </string-array>-->
+    <string name="deleteAll_items">Delete all items</string>
+    <string name="exit">Exit</string>
+    <string name="logOut">Log out</string>
+
+    <string name="deleteItem">Delete Item</string>
+    <string name="editItem">Edit Item</string>
+    <string name="sub"></string>
+    <string name="myMovies">Library movies</string>
+    <string name="conectedAs">conected as</string>
+    <string name="search">Search:</string>
+    <string name="searchEditText" />
+    <string name="go">go</string>
+    <string name="cancel">Cancel</string>
+    <string name="welcome">welcome</string>
+    <string name="firstName">First name:</string>
+    <string name="lastName">Last name:</string>
+    <string name="nameEditText" />
+    <string name="Register">Register</string>
+    <string name="subjectEditText">subjectEditText</string>
+    <string name="toolbar_title">my virtual library</string>
+    <string name="app_title">gotac</string>
+    <string name="empty_listview">No found any movies, please click the + button below to add a new movie to list</string>
+    <string name="add_movie_manual">add movie manual</string>
+    <string name="add_movie_online">add movie online</string>
+
+    <string name="facebook_app_id">1809752352604197</string>
+    <string name="title_activity_maps">Map</string>
+
+
+</resources>
